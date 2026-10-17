@@ -1,4 +1,4 @@
-"""Render deterministic idle/demo/compact/guide screenshots without a camera."""
+"""Render deterministic studio, demo, compact, guide and activity screenshots."""
 import os
 os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 
@@ -39,6 +39,9 @@ def main():
             win.resize(1440, 960)
             app.processEvents()
             win.grab().save(str(output / "studio-guide.png"))
+            win._page(1)
+            app.processEvents()
+            win.grab().save(str(output / "studio-activity.png"))
             win.close()
             app.processEvents()
     print(f"Screenshots saved to {output}")

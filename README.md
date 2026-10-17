@@ -2,6 +2,34 @@
 
 A native Python desktop application for webcam exercise tracking, repetition counting and camera-based movement guidance. Rebuilt as a final-year computer vision project with MediaPipe Tasks, OpenCV and PySide6.
 
+## Screenshots
+
+### Workout studio
+
+Configure your exercise, repetition target, sets and rest interval from the training screen.
+
+![Gym Helper workout studio with exercise settings and session controls](docs/screenshots/workout-studio.png)
+
+### Rep counting and movement feedback
+
+The interactive demo shows the pose overlay, repetition progress, movement cues and live joint-angle trace. This screenshot uses **synthetic landmarks**, not webcam footage or measured exercise results.
+
+![Gym Helper interactive demo showing simulated pose tracking, five repetitions and a movement chart](docs/screenshots/interactive-demo.png)
+
+### Exercise guide
+
+Each exercise includes camera placement, movement instructions and an explanation of how repetitions are counted.
+
+![Gym Helper bicep curl guide with setup instructions and counting rules](docs/screenshots/exercise-guide.png)
+
+### Activity and history
+
+Review saved sessions and export session summaries as CSV. The screenshot shows the empty state before any real workout sessions are saved.
+
+![Gym Helper activity page with session totals and an empty workout history](docs/screenshots/activity.png)
+
+Screenshots are rendered from the actual desktop application using `verify_ui.py`, with an isolated temporary history database. No personal workout history is included.
+
 ## Run
 
 On this computer, double-click **launch.bat**, or run:
